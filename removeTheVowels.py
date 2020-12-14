@@ -1,3 +1,14 @@
+# Given a string, return a new string with all the vowels removed.
+
+# Examples:
+
+#     csRemoveTheVowels("Lambda School is awesome!") -> "Lmbd Schl s wsm!"
+
+# Notes:
+
+#     For this challenge, "y" is not considered a vowel.
+
+
 def csRemoveTheVowels(input_str):
     # create a set of all vowels to use when we are checking if a character is a vowel
     vowel_set = ('a', 'e','i', 'o', 'u')
@@ -12,3 +23,12 @@ def csRemoveTheVowels(input_str):
             result_str += i    
             
     return result_str
+
+
+
+
+
+#     import re
+# def csRemoveTheVowels(input_str):
+#     result = re.sub(r'[AEIOU]', '', input_str, flags=re.IGNORECASE)
+#     return result

@@ -1,3 +1,10 @@
+# Given a string of words, return the length of the shortest word(s).
+
+# Notes:
+
+#     The input string will never be empty and you do not need to validate for different data types.
+
+
 def csShortestWord(input_str):
     # splitting the words so we have an array of just words (no whitespace)
     # eg "the big brown fox" => ["the", "big", "brown", "fox"]
@@ -12,3 +19,9 @@ def csShortestWord(input_str):
             shortest_length = len(word)
             
     return shortest_length  
+
+
+
+    # def csShortestWord(input_str):
+    # s = input_str.split()
+    # return len(min(s, key = len))
